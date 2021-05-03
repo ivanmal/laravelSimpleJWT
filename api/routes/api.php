@@ -15,11 +15,8 @@ use App\Http\Controllers\AuthController;
 */
 
 Route::get('/', function () {
-    return 'API GATEWAY - v ' . env('VERSION_APP') . ' Copyright &copy; 2006-' . date('Y')
-        . ' https://www.duosystem.com.br/';
+    return 'API GATEWAY - v ' . env('VERSION_APP');
 });
-
-Route::get('/users', [AuthController::class, 'users']);
 
 Route::group([
 
